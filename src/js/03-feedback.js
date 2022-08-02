@@ -7,10 +7,10 @@ const form = document.querySelector('.feedback-form');
 saidInput();
 
 function saidInput() {
-  const a = JSON.parse(localStorage.getItem('feedback-form-state'));
-  if (a) {
-    inputMessage.value = a.message || '';
-    inputMail.value = a.email || '';
+  const keyName = JSON.parse(localStorage.getItem('feedback-form-state'));
+  if (keyName) {
+    inputMessage.value = keyName.message || '';
+    inputMail.value = keyName.email || '';
   }
 }
 
