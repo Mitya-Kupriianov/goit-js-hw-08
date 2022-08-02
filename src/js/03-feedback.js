@@ -25,6 +25,7 @@ const storageData = (type, value) => {
 function onInputMail(e) {
   storageData('email', e.target.value);
 }
+
 function onInputMessage(e) {
   storageData('message', e.target.value);
 }
