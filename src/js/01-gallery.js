@@ -27,7 +27,7 @@ const imgList = galleryItems.reduce(
 
 gallery.innerHTML = imgList;
 
-const SimpleLightBox = new SimpleLightBox('.gallery a', {
+const SimpleLightbox = new SimpleLightbox('.gallery a', {
   captionDelay: 250,
   captionsData: 'alt',
 });
